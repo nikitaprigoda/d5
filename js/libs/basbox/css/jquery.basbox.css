@@ -1,0 +1,48 @@
+.popup-basbox{
+	display:block!important;
+	position:fixed;
+	background:#fff;
+	width:50%;
+	height:100%;
+	left:0;
+	top:0;
+	padding:15px;
+	overflow:auto; 
+    margin-left: -50%;
+}
+
+.popup-basbox.popup-basbox-active{
+	transform: translateX(100%);
+	transition: transform .25s ease;
+	display:block;
+	z-index: 9999;
+    box-shadow: -25px 1px 25px 0 rgba(0,0,0,.02), 2px 0 11px 0 rgba(0,0,0,.25);	
+}
+
+.popup-basbox-overlay{
+	position:fixed;
+	width:100%;
+	height:100%;
+	right:0;
+	top:0;
+    /*background-color: rgba(24,50,71,.6);*/
+    z-index: 999;
+    transition: .2s ease-in;
+    animation: fadeInDelay .2s ease-in;	
+}
+
+.popup-basbox-close{	
+    background: #1382B9;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    font-family: Arial;
+    text-align: center;
+    cursor: pointer;
+    z-index: 9999;
+    cursor: pointer;	
+	display:none;
+}
